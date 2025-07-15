@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,11 +148,19 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             color: var(--primary-color);
             margin-bottom: 15px;
         }
@@ -177,7 +186,8 @@
             margin-bottom: 15px;
         }
 
-        ul, ol {
+        ul,
+        ol {
             margin-bottom: 15px;
             padding-left: 20px;
         }
@@ -246,11 +256,14 @@
             margin-bottom: 20px;
         }
 
-        table, th, td {
+        table,
+        th,
+        td {
             border: 1px solid var(--border-color);
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
         }
@@ -346,17 +359,20 @@
             .container {
                 flex-direction: column;
             }
+
             .sidebar {
                 width: 100%;
                 height: auto;
                 max-height: 200px;
             }
+
             .main-content {
                 overflow-y: auto;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">HTML Mastery</div>
@@ -415,12 +431,14 @@
             <!-- Introduction Section -->
             <section id="intro" class="section active">
                 <h1>Introduction to HTML</h1>
-                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications. It describes the structure of web pages using markup.</p>
-                
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web
+                    applications. It describes the structure of web pages using markup.</p>
+
                 <div class="note">
-                    <strong>Note:</strong> HTML is not a programming language; it's a markup language that defines the structure of your content.
+                    <strong>Note:</strong> HTML is not a programming language; it's a markup language that defines the
+                    structure of your content.
                 </div>
-                
+
                 <h2>What You'll Learn</h2>
                 <ul>
                     <li>The basic structure of HTML documents</li>
@@ -431,10 +449,11 @@
                     <li>Semantic HTML for better structure and accessibility</li>
                     <li>Advanced features like multimedia and graphics</li>
                 </ul>
-                
+
                 <h2>History of HTML</h2>
-                <p>HTML was created by Tim Berners-Lee in 1991. The first version had only 18 elements. Since then, HTML has evolved through several versions:</p>
-                
+                <p>HTML was created by Tim Berners-Lee in 1991. The first version had only 18 elements. Since then, HTML
+                    has evolved through several versions:</p>
+
                 <table>
                     <tr>
                         <th>Version</th>
@@ -467,7 +486,7 @@
                         <td>Added semantic elements, multimedia, graphics APIs</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Simple HTML Document</div>
                     <pre><code>&lt;!DOCTYPE html&gt;
@@ -486,8 +505,9 @@
             <!-- HTML Basics Section -->
             <section id="basics" class="section">
                 <h1>HTML Basics</h1>
-                <p>HTML documents are made up of elements that describe the structure of the page. These elements are represented by tags that mark up content.</p>
-                
+                <p>HTML documents are made up of elements that describe the structure of the page. These elements are
+                    represented by tags that mark up content.</p>
+
                 <h2>Key Concepts</h2>
                 <ul>
                     <li><strong>Elements:</strong> The building blocks of HTML pages</li>
@@ -495,17 +515,19 @@
                     <li><strong>Attributes:</strong> Provide additional information about elements</li>
                     <li><strong>Nesting:</strong> Placing elements inside other elements</li>
                 </ul>
-                
+
                 <div class="note">
-                    <strong>Tip:</strong> Most HTML elements have an opening tag, content, and a closing tag. Some elements are self-closing.
+                    <strong>Tip:</strong> Most HTML elements have an opening tag, content, and a closing tag. Some
+                    elements are self-closing.
                 </div>
             </section>
 
             <!-- Document Structure Section -->
             <section id="structure" class="section">
                 <h1>HTML Document Structure</h1>
-                <p>Every HTML document has a basic structure that must be followed. This includes document type declaration, HTML element, head section, and body section.</p>
-                
+                <p>Every HTML document has a basic structure that must be followed. This includes document type
+                    declaration, HTML element, head section, and body section.</p>
+
                 <h2>Basic Structure</h2>
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -518,13 +540,14 @@
     &lt;!-- Content goes here --&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                
+
                 <h3>Document Type Declaration</h3>
-                <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and HTML version (HTML5 in this case).</p>
-                
+                <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type and HTML version (HTML5
+                    in this case).</p>
+
                 <h3>HTML Element</h3>
                 <p>The <code>&lt;html&gt;</code> element is the root element and contains all other HTML elements.</p>
-                
+
                 <h3>Head Section</h3>
                 <p>The <code>&lt;head&gt;</code> element contains meta information about the document, including:</p>
                 <ul>
@@ -534,7 +557,7 @@
                     <li><code>&lt;style&gt;</code> - Contains CSS styles</li>
                     <li><code>&lt;script&gt;</code> - Contains JavaScript code</li>
                 </ul>
-                
+
                 <h3>Body Section</h3>
                 <p>The <code>&lt;body&gt;</code> element contains the visible page content.</p>
             </section>
@@ -542,17 +565,18 @@
             <!-- HTML Elements Section -->
             <section id="elements" class="section">
                 <h1>HTML Elements</h1>
-                <p>HTML elements are the building blocks of HTML pages. Each element has a specific purpose and meaning.</p>
-                
+                <p>HTML elements are the building blocks of HTML pages. Each element has a specific purpose and meaning.
+                </p>
+
                 <h2>Element Syntax</h2>
                 <p>Most HTML elements have an opening tag, content, and a closing tag:</p>
                 <pre><code>&lt;tagname&gt;content goes here...&lt;/tagname&gt;</code></pre>
-                
+
                 <p>Some elements are empty (self-closing) and don't have content or a closing tag:</p>
                 <pre><code>&lt;tagname&gt;</code></pre>
                 <p>or in XHTML style:</p>
                 <pre><code>&lt;tagname /&gt;</code></pre>
-                
+
                 <h2>Common HTML Elements</h2>
                 <table>
                     <tr>
@@ -591,20 +615,23 @@
                         <td><code>&lt;span&gt;text&lt;/span&gt;</code></td>
                     </tr>
                 </table>
-                
+
                 <div class="note">
-                    <strong>Note:</strong> HTML5 introduced many new semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> which we'll cover later.
+                    <strong>Note:</strong> HTML5 introduced many new semantic elements like <code>&lt;header&gt;</code>,
+                    <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> which
+                    we'll cover later.
                 </div>
             </section>
 
             <!-- Attributes Section -->
             <section id="attributes" class="section">
                 <h1>HTML Attributes</h1>
-                <p>Attributes provide additional information about HTML elements. They are always specified in the start tag.</p>
-                
+                <p>Attributes provide additional information about HTML elements. They are always specified in the start
+                    tag.</p>
+
                 <h2>Attribute Syntax</h2>
                 <pre><code>&lt;tagname attribute="value"&gt;content&lt;/tagname&gt;</code></pre>
-                
+
                 <h2>Common Attributes</h2>
                 <table>
                     <tr>
@@ -648,14 +675,15 @@
                         <td><code>&lt;a title="Tooltip"&gt;</code></td>
                     </tr>
                 </table>
-                
+
                 <h2>Boolean Attributes</h2>
                 <p>Some attributes don't need a value - their presence implies true:</p>
                 <pre><code>&lt;input type="checkbox" checked&gt;
 &lt;button disabled&gt;Click&lt;/button&gt;</code></pre>
-                
+
                 <div class="warning">
-                    <strong>Warning:</strong> Always quote attribute values. While HTML5 allows unquoted values in some cases, it's better practice to always use quotes.
+                    <strong>Warning:</strong> Always quote attribute values. While HTML5 allows unquoted values in some
+                    cases, it's better practice to always use quotes.
                 </div>
             </section>
 
@@ -663,10 +691,11 @@
             <section id="headings" class="section">
                 <h1>Headings & Paragraphs</h1>
                 <p>Headings and paragraphs are the most basic text elements in HTML.</p>
-                
+
                 <h2>Headings</h2>
-                <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (most important) to <code>&lt;h6&gt;</code> (least important).</p>
-                
+                <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (most important) to
+                    <code>&lt;h6&gt;</code> (least important).</p>
+
                 <div class="example">
                     <div class="example-title">Heading Example</div>
                     <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
@@ -684,20 +713,21 @@
                         <h6 style="margin: 10px 0; font-size: 0.67em;">Level 6 Heading</h6>
                     </div>
                 </div>
-                
+
                 <div class="note">
-                    <strong>Best Practice:</strong> Use headings semantically to structure your content, not just for visual styling. There should only be one <code>&lt;h1&gt;</code> per page.
+                    <strong>Best Practice:</strong> Use headings semantically to structure your content, not just for
+                    visual styling. There should only be one <code>&lt;h1&gt;</code> per page.
                 </div>
-                
+
                 <h2>Paragraphs</h2>
                 <p>The <code>&lt;p&gt;</code> element defines a paragraph:</p>
                 <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
 &lt;p&gt;This is another paragraph.&lt;/p&gt;</code></pre>
-                
+
                 <h2>Line Breaks</h2>
                 <p>The <code>&lt;br&gt;</code> element creates a line break:</p>
                 <pre><code>&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;</code></pre>
-                
+
                 <h2>Horizontal Rules</h2>
                 <p>The <code>&lt;hr&gt;</code> element creates a thematic break (horizontal line):</p>
                 <pre><code>&lt;p&gt;Section one content.&lt;/p&gt;
@@ -709,7 +739,7 @@
             <section id="formatting" class="section">
                 <h1>Text Formatting</h1>
                 <p>HTML provides various elements for formatting text with special meaning.</p>
-                
+
                 <h2>Basic Text Formatting</h2>
                 <table>
                     <tr>
@@ -768,7 +798,7 @@
                         <td><code>E=mc&lt;sup&gt;2&lt;/sup&gt;</code></td>
                     </tr>
                 </table>
-                
+
                 <h2>Quotations</h2>
                 <p>HTML provides elements for marking up quotations:</p>
                 <ul>
@@ -776,7 +806,7 @@
                     <li><code>&lt;q&gt;</code> - For short quotations (inline)</li>
                     <li><code>&lt;cite&gt;</code> - For citations</li>
                 </ul>
-                
+
                 <div class="example">
                     <div class="example-title">Quotation Example</div>
                     <pre><code>&lt;blockquote cite="https://example.com"&gt;
@@ -785,7 +815,7 @@
 
 &lt;p&gt;As &lt;cite&gt;Albert Einstein&lt;/cite&gt; said: &lt;q&gt;Imagination is more important than knowledge.&lt;/q&gt;&lt;/p&gt;</code></pre>
                 </div>
-                
+
                 <h2>Computer Code</h2>
                 <p>Elements for displaying computer code:</p>
                 <ul>
@@ -795,7 +825,7 @@
                     <li><code>&lt;samp&gt;</code> - Sample output</li>
                     <li><code>&lt;var&gt;</code> - Variable</li>
                 </ul>
-                
+
                 <div class="example">
                     <div class="example-title">Code Example</div>
                     <pre><code>&lt;p&gt;In JavaScript, use &lt;code&gt;console.log()&lt;/code&gt; to print to the console.&lt;/p&gt;
@@ -815,11 +845,12 @@ function greet() {
             <!-- Links Section -->
             <section id="links" class="section">
                 <h1>Links & Anchors</h1>
-                <p>The <code>&lt;a&gt;</code> (anchor) element creates hyperlinks to other web pages, files, locations within the same page, or any other URL.</p>
-                
+                <p>The <code>&lt;a&gt;</code> (anchor) element creates hyperlinks to other web pages, files, locations
+                    within the same page, or any other URL.</p>
+
                 <h2>Basic Link Syntax</h2>
                 <pre><code>&lt;a href="url"&gt;link text&lt;/a&gt;</code></pre>
-                
+
                 <h2>Link Types</h2>
                 <div class="tab-container">
                     <div class="tab-buttons">
@@ -829,18 +860,18 @@ function greet() {
                         <button class="tab-btn" data-tab="email">Email</button>
                         <button class="tab-btn" data-tab="download">Download</button>
                     </div>
-                    
+
                     <div class="tab-content active" data-tab="external">
                         <p>Links to other websites:</p>
                         <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="internal">
                         <p>Links to other pages on your site (relative URLs):</p>
                         <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;
 &lt;a href="/products/index.html"&gt;Products&lt;/a&gt;</code></pre>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="local">
                         <p>Links to sections within the same page:</p>
                         <pre><code>&lt;!-- First create an anchor point with id --&gt;
@@ -849,20 +880,20 @@ function greet() {
 &lt;!-- Then link to it --&gt;
 &lt;a href="#section1"&gt;Jump to Section 1&lt;/a&gt;</code></pre>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="email">
                         <p>Email links that open the user's email client:</p>
                         <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;
 &lt;a href="mailto:someone@example.com?subject=Hello&amp;body=Message"&gt;Pre-filled Email&lt;/a&gt;</code></pre>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="download">
                         <p>Links that trigger a download:</p>
                         <pre><code>&lt;a href="document.pdf" download&gt;Download PDF&lt;/a&gt;
 &lt;a href="document.pdf" download="new-filename.pdf"&gt;Download with New Name&lt;/a&gt;</code></pre>
                     </div>
                 </div>
-                
+
                 <h2>Link Attributes</h2>
                 <table>
                     <tr>
@@ -886,27 +917,29 @@ function greet() {
                         <td>Specifies that the target will be downloaded</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Link Example with Attributes</div>
                     <pre><code>&lt;a href="https://www.example.com" target="_blank" rel="noopener noreferrer"&gt;
     Visit Example in New Tab
 &lt;/a&gt;</code></pre>
                 </div>
-                
+
                 <div class="warning">
-                    <strong>Security:</strong> When using <code>target="_blank"</code>, always include <code>rel="noopener noreferrer"</code> to prevent potential security vulnerabilities.
+                    <strong>Security:</strong> When using <code>target="_blank"</code>, always include
+                    <code>rel="noopener noreferrer"</code> to prevent potential security vulnerabilities.
                 </div>
             </section>
 
             <!-- Images Section -->
             <section id="images" class="section">
                 <h1>Images</h1>
-                <p>The <code>&lt;img&gt;</code> element is used to embed images in HTML pages. It's an empty element (no closing tag).</p>
-                
+                <p>The <code>&lt;img&gt;</code> element is used to embed images in HTML pages. It's an empty element (no
+                    closing tag).</p>
+
                 <h2>Basic Syntax</h2>
                 <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
-                
+
                 <h2>Key Attributes</h2>
                 <table>
                     <tr>
@@ -938,13 +971,13 @@ function greet() {
                         <td>Lazy loading ("lazy" or "eager")</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Image Example</div>
                     <pre><code>&lt;img src="nature.jpg" alt="Beautiful nature landscape" 
      width="600" height="400" title="Nature Photo"&gt;</code></pre>
                 </div>
-                
+
                 <h2>Responsive Images</h2>
                 <p>HTML5 introduced the <code>&lt;picture&gt;</code> element for responsive images:</p>
                 <pre><code>&lt;picture&gt;
@@ -952,7 +985,7 @@ function greet() {
     &lt;source media="(min-width: 768px)" srcset="medium.jpg"&gt;
     &lt;img src="small.jpg" alt="Responsive image"&gt;
 &lt;/picture&gt;</code></pre>
-                
+
                 <h2>Image Maps</h2>
                 <p>Create clickable areas on an image:</p>
                 <pre><code>&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
@@ -961,9 +994,10 @@ function greet() {
     &lt;area shape="rect" coords="34,44,270,350" href="computer.html" alt="Computer"&gt;
     &lt;area shape="circle" coords="337,300,44" href="coffee.html" alt="Coffee"&gt;
 &lt;/map&gt;</code></pre>
-                
+
                 <div class="note">
-                    <strong>Best Practice:</strong> Always provide meaningful <code>alt</code> text for accessibility and SEO. For decorative images, use <code>alt=""</code>.
+                    <strong>Best Practice:</strong> Always provide meaningful <code>alt</code> text for accessibility
+                    and SEO. For decorative images, use <code>alt=""</code>.
                 </div>
             </section>
 
@@ -971,15 +1005,16 @@ function greet() {
             <section id="lists" class="section">
                 <h1>Lists</h1>
                 <p>HTML provides several types of lists for organizing content.</p>
-                
+
                 <h2>Unordered Lists</h2>
-                <p>Created with <code>&lt;ul&gt;</code> (unordered list) and <code>&lt;li&gt;</code> (list item) elements:</p>
+                <p>Created with <code>&lt;ul&gt;</code> (unordered list) and <code>&lt;li&gt;</code> (list item)
+                    elements:</p>
                 <pre><code>&lt;ul&gt;
     &lt;li&gt;Coffee&lt;/li&gt;
     &lt;li&gt;Tea&lt;/li&gt;
     &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                
+
                 <h2>Ordered Lists</h2>
                 <p>Created with <code>&lt;ol&gt;</code> (ordered list) and <code>&lt;li&gt;</code> elements:</p>
                 <pre><code>&lt;ol&gt;
@@ -987,7 +1022,7 @@ function greet() {
     &lt;li&gt;Second item&lt;/li&gt;
     &lt;li&gt;Third item&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-                
+
                 <h3>Ordered List Attributes</h3>
                 <table>
                     <tr>
@@ -1007,7 +1042,7 @@ function greet() {
                         <td>Reverses the numbering</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Ordered List Example</div>
                     <pre><code>&lt;ol type="A" start="3"&gt;
@@ -1016,16 +1051,17 @@ function greet() {
     &lt;li&gt;Item E&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
                 </div>
-                
+
                 <h2>Description Lists</h2>
-                <p>Created with <code>&lt;dl&gt;</code> (description list), <code>&lt;dt&gt;</code> (term), and <code>&lt;dd&gt;</code> (description):</p>
+                <p>Created with <code>&lt;dl&gt;</code> (description list), <code>&lt;dt&gt;</code> (term), and
+                    <code>&lt;dd&gt;</code> (description):</p>
                 <pre><code>&lt;dl&gt;
     &lt;dt&gt;Coffee&lt;/dt&gt;
     &lt;dd&gt;- black hot drink&lt;/dd&gt;
     &lt;dt&gt;Milk&lt;/dt&gt;
     &lt;dd&gt;- white cold drink&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
-                
+
                 <h2>Nested Lists</h2>
                 <p>Lists can be nested inside other lists:</p>
                 <pre><code>&lt;ul&gt;
@@ -1038,7 +1074,7 @@ function greet() {
     &lt;/li&gt;
     &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                
+
                 <div class="note">
                     <strong>Tip:</strong> Use CSS to control list styling (bullet types, numbering, indentation, etc.).
                 </div>
@@ -1048,7 +1084,7 @@ function greet() {
             <section id="tables" class="section">
                 <h1>Tables</h1>
                 <p>HTML tables allow you to arrange data into rows and columns.</p>
-                
+
                 <h2>Basic Table Structure</h2>
                 <pre><code>&lt;table&gt;
     &lt;tr&gt;
@@ -1064,7 +1100,7 @@ function greet() {
         &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-                
+
                 <h2>Table Elements</h2>
                 <table>
                     <tr>
@@ -1112,7 +1148,7 @@ function greet() {
                         <td>Specifies column properties</td>
                     </tr>
                 </table>
-                
+
                 <h2>Advanced Table Example</h2>
                 <pre><code>&lt;table&gt;
     &lt;caption&gt;Monthly Savings&lt;/caption&gt;
@@ -1142,7 +1178,7 @@ function greet() {
         &lt;/tr&gt;
     &lt;/tfoot&gt;
 &lt;/table&gt;</code></pre>
-                
+
                 <h2>Table Attributes</h2>
                 <table>
                     <tr>
@@ -1158,7 +1194,7 @@ function greet() {
                         <td>Number of rows a cell should span</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Spanning Example</div>
                     <pre><code>&lt;table&gt;
@@ -1177,9 +1213,10 @@ function greet() {
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
                 </div>
-                
+
                 <div class="warning">
-                    <strong>Note:</strong> While HTML tables are great for tabular data, they should not be used for page layout. Use CSS for layout instead.
+                    <strong>Note:</strong> While HTML tables are great for tabular data, they should not be used for
+                    page layout. Use CSS for layout instead.
                 </div>
             </section>
 
@@ -1187,13 +1224,13 @@ function greet() {
             <section id="forms" class="section">
                 <h1>Forms & Input</h1>
                 <p>HTML forms are used to collect user input. The <code>&lt;form&gt;</code> element defines a form.</p>
-                
+
                 <h2>Basic Form Structure</h2>
                 <pre><code>&lt;form action="/submit" method="post"&gt;
     &lt;!-- Form elements go here --&gt;
     &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;</code></pre>
-                
+
                 <h2>Form Attributes</h2>
                 <table>
                     <tr>
@@ -1225,10 +1262,11 @@ function greet() {
                         <td>Disable form validation</td>
                     </tr>
                 </table>
-                
+
                 <h2>Input Elements</h2>
-                <p>The <code>&lt;input&gt;</code> element is the most important form element. Its type is defined by the <code>type</code> attribute.</p>
-                
+                <p>The <code>&lt;input&gt;</code> element is the most important form element. Its type is defined by the
+                    <code>type</code> attribute.</p>
+
                 <div class="tab-container">
                     <div class="tab-buttons">
                         <button class="tab-btn active" data-tab="text-inputs">Text</button>
@@ -1236,7 +1274,7 @@ function greet() {
                         <button class="tab-btn" data-tab="button-inputs">Buttons</button>
                         <button class="tab-btn" data-tab="other-inputs">Other</button>
                     </div>
-                    
+
                     <div class="tab-content active" data-tab="text-inputs">
                         <table>
                             <tr>
@@ -1269,7 +1307,7 @@ function greet() {
                             </tr>
                         </table>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="selection-inputs">
                         <table>
                             <tr>
@@ -1290,7 +1328,7 @@ function greet() {
                             </tr>
                         </table>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="button-inputs">
                         <table>
                             <tr>
@@ -1311,7 +1349,7 @@ function greet() {
                             </tr>
                         </table>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="other-inputs">
                         <table>
                             <tr>
@@ -1345,7 +1383,7 @@ function greet() {
                         </table>
                     </div>
                 </div>
-                
+
                 <h2>Other Form Elements</h2>
                 <table>
                     <tr>
@@ -1389,7 +1427,7 @@ function greet() {
                         <td>Result of a calculation</td>
                     </tr>
                 </table>
-                
+
                 <h2>Complete Form Example</h2>
                 <pre><code>&lt;form action="/submit" method="post"&gt;
     &lt;fieldset&gt;
@@ -1442,7 +1480,7 @@ function greet() {
     &lt;button type="submit"&gt;Submit&lt;/button&gt;
     &lt;button type="reset"&gt;Reset&lt;/button&gt;
 &lt;/form&gt;</code></pre>
-                
+
                 <h2>Form Validation</h2>
                 <p>HTML5 introduced built-in form validation:</p>
                 <table>
@@ -1467,7 +1505,7 @@ function greet() {
                         <td>Regular expression pattern</td>
                     </tr>
                 </table>
-                
+
                 <div class="example">
                     <div class="example-title">Validation Example</div>
                     <pre><code>&lt;input type="text" required minlength="3" maxlength="20"&gt;
@@ -1481,8 +1519,9 @@ function greet() {
             <!-- Semantic HTML Section -->
             <section id="semantic" class="section">
                 <h1>Semantic HTML</h1>
-                <p>Semantic HTML introduces meaning to the web page rather than just presentation. It makes the content more accessible and SEO-friendly.</p>
-                
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation. It makes the content
+                    more accessible and SEO-friendly.</p>
+
                 <h2>Why Semantic HTML?</h2>
                 <ul>
                     <li>Better accessibility for screen readers</li>
@@ -1490,7 +1529,7 @@ function greet() {
                     <li>Easier to maintain and understand code</li>
                     <li>Future-proofing your website</li>
                 </ul>
-                
+
                 <h2>Semantic Elements</h2>
                 <table>
                     <tr>
@@ -1542,7 +1581,7 @@ function greet() {
                         <td>Highlighted text</td>
                     </tr>
                 </table>
-                
+
                 <h2>Semantic Layout Example</h2>
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -1583,17 +1622,19 @@ function greet() {
     &lt;/footer&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                
+
                 <div class="note">
-                    <strong>Tip:</strong> Use semantic elements appropriately based on the meaning of the content, not how they look. CSS controls appearance.
+                    <strong>Tip:</strong> Use semantic elements appropriately based on the meaning of the content, not
+                    how they look. CSS controls appearance.
                 </div>
             </section>
 
             <!-- Multimedia Section -->
             <section id="multimedia" class="section">
                 <h1>Multimedia</h1>
-                <p>HTML5 introduced native support for multimedia with <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements.</p>
-                
+                <p>HTML5 introduced native support for multimedia with <code>&lt;audio&gt;</code> and
+                    <code>&lt;video&gt;</code> elements.</p>
+
                 <h2>Audio</h2>
                 <p>The <code>&lt;audio&gt;</code> element embeds sound content:</p>
                 <pre><code>&lt;audio controls&gt;
@@ -1601,7 +1642,7 @@ function greet() {
     &lt;source src="audio.ogg" type="audio/ogg"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;</code></pre>
-                
+
                 <h3>Audio Attributes</h3>
                 <table>
                     <tr>
@@ -1629,7 +1670,7 @@ function greet() {
                         <td>How the audio should be loaded (auto, metadata, none)</td>
                     </tr>
                 </table>
-                
+
                 <h2>Video</h2>
                 <p>The <code>&lt;video&gt;</code> element embeds video content:</p>
                 <pre><code>&lt;video width="320" height="240" controls poster="poster.jpg"&gt;
@@ -1637,7 +1678,7 @@ function greet() {
     &lt;source src="movie.ogg" type="video/ogg"&gt;
     Your browser does not support the video tag.
 &lt;/video&gt;</code></pre>
-                
+
                 <h3>Video Attributes</h3>
                 <table>
                     <tr>
@@ -1673,7 +1714,7 @@ function greet() {
                         <td>How the video should be loaded</td>
                     </tr>
                 </table>
-                
+
                 <h2>Embedding Content</h2>
                 <p>The <code>&lt;iframe&gt;</code> element embeds another HTML page:</p>
                 <pre><code>&lt;iframe src="https://www.example.com" 
@@ -1683,7 +1724,7 @@ function greet() {
         frameborder="0" 
         allowfullscreen&gt;
 &lt;/iframe&gt;</code></pre>
-                
+
                 <h2>Embedding YouTube Videos</h2>
                 <pre><code>&lt;iframe width="560" height="315" 
         src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
@@ -1691,9 +1732,10 @@ function greet() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen&gt;
 &lt;/iframe&gt;</code></pre>
-                
+
                 <div class="warning">
-                    <strong>Note:</strong> Many browsers block autoplay of audio/video with sound to prevent annoying users. Consider user experience when using these features.
+                    <strong>Note:</strong> Many browsers block autoplay of audio/video with sound to prevent annoying
+                    users. Consider user experience when using these features.
                 </div>
             </section>
 
@@ -1701,7 +1743,7 @@ function greet() {
             <section id="graphics" class="section">
                 <h1>Graphics</h1>
                 <p>HTML5 provides several ways to draw graphics directly in the browser.</p>
-                
+
                 <h2>Canvas</h2>
                 <p>The <code>&lt;canvas&gt;</code> element is used to draw graphics via JavaScript:</p>
                 <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;
@@ -1714,7 +1756,7 @@ function greet() {
     ctx.fillStyle = 'red';
     ctx.fillRect(10, 10, 150, 80);
 &lt;/script&gt;</code></pre>
-                
+
                 <h3>Canvas Drawing Methods</h3>
                 <table>
                     <tr>
@@ -1766,13 +1808,13 @@ function greet() {
                         <td>Draws the current path</td>
                     </tr>
                 </table>
-                
+
                 <h2>SVG</h2>
                 <p>SVG (Scalable Vector Graphics) defines vector-based graphics in XML format:</p>
                 <pre><code>&lt;svg width="100" height="100"&gt;
     &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
 &lt;/svg&gt;</code></pre>
-                
+
                 <h3>Common SVG Elements</h3>
                 <table>
                     <tr>
@@ -1804,9 +1846,10 @@ function greet() {
                         <td>Draws text</td>
                     </tr>
                 </table>
-                
+
                 <div class="note">
-                    <strong>Comparison:</strong> Canvas is pixel-based (good for games, image manipulation) while SVG is vector-based (good for logos, icons, scalable graphics).
+                    <strong>Comparison:</strong> Canvas is pixel-based (good for games, image manipulation) while SVG is
+                    vector-based (good for logos, icons, scalable graphics).
                 </div>
             </section>
 
@@ -1814,7 +1857,7 @@ function greet() {
             <section id="apis" class="section">
                 <h1>HTML APIs</h1>
                 <p>HTML5 introduced several JavaScript APIs that enhance web applications.</p>
-                
+
                 <h2>Geolocation API</h2>
                 <p>Gets the geographical position of a user:</p>
                 <pre><code>if (navigator.geolocation) {
@@ -1830,7 +1873,7 @@ function greet() {
 } else {
     console.log("Geolocation is not supported by this browser.");
 }</code></pre>
-                
+
                 <h2>Drag and Drop API</h2>
                 <p>Makes elements draggable and droppable:</p>
                 <pre><code>&lt;div id="drag" draggable="true" ondragstart="drag(event)"&gt;Drag me&lt;/div&gt;
@@ -1851,10 +1894,10 @@ function greet() {
         e.target.appendChild(document.getElementById(data));
     }
 &lt;/script&gt;</code></pre>
-                
+
                 <h2>Web Storage API</h2>
                 <p>Stores data locally in the browser (covered in next section).</p>
-                
+
                 <h2>Web Workers</h2>
                 <p>Runs JavaScript in the background without blocking the UI:</p>
                 <pre><code>// main.js
@@ -1870,14 +1913,14 @@ onmessage = function(e) {
     // Do intensive task
     postMessage("Work done");
 };</code></pre>
-                
+
                 <h2>Server-Sent Events</h2>
                 <p>Receives automatic updates from a server:</p>
                 <pre><code>const source = new EventSource("updates.php");
 source.onmessage = function(e) {
     console.log("Update: " + e.data);
 };</code></pre>
-                
+
                 <h2>WebSocket API</h2>
                 <p>Creates a persistent connection between client and server:</p>
                 <pre><code>const socket = new WebSocket("ws://example.com/socket");
@@ -1893,7 +1936,7 @@ socket.onmessage = function(e) {
             <section id="storage" class="section">
                 <h1>Web Storage</h1>
                 <p>The Web Storage API provides mechanisms for storing data in the browser.</p>
-                
+
                 <h2>Local Storage vs Session Storage</h2>
                 <table>
                     <tr>
@@ -1917,7 +1960,7 @@ socket.onmessage = function(e) {
                         <td>Accessible only within the same tab</td>
                     </tr>
                 </table>
-                
+
                 <h2>Web Storage Methods</h2>
                 <table>
                     <tr>
@@ -1945,14 +1988,14 @@ socket.onmessage = function(e) {
                         <td>Gets the key at a specific index</td>
                     </tr>
                 </table>
-                
+
                 <h2>Usage Examples</h2>
                 <div class="tab-container">
                     <div class="tab-buttons">
                         <button class="tab-btn active" data-tab="local-storage">Local Storage</button>
                         <button class="tab-btn" data-tab="session-storage">Session Storage</button>
                     </div>
-                    
+
                     <div class="tab-content active" data-tab="local-storage">
                         <pre><code>// Store data
 localStorage.setItem('username', 'john_doe');
@@ -1975,7 +2018,7 @@ localStorage.setItem('user', JSON.stringify(user));
 // Retrieve object
 const storedUser = JSON.parse(localStorage.getItem('user'));</code></pre>
                     </div>
-                    
+
                     <div class="tab-content" data-tab="session-storage">
                         <pre><code>// Store data
 sessionStorage.setItem('session_id', 'abc123');
@@ -1990,9 +2033,10 @@ sessionStorage.removeItem('session_id');
 sessionStorage.clear();</code></pre>
                     </div>
                 </div>
-                
+
                 <div class="warning">
-                    <strong>Security:</strong> Web Storage is not secure for sensitive data as it's accessible via JavaScript. Use HTTP-only cookies for sensitive information.
+                    <strong>Security:</strong> Web Storage is not secure for sensitive data as it's accessible via
+                    JavaScript. Use HTTP-only cookies for sensitive information.
                 </div>
             </section>
 
@@ -2000,7 +2044,7 @@ sessionStorage.clear();</code></pre>
             <section id="basic-example" class="section">
                 <h1>Basic HTML Page Example</h1>
                 <p>Here's a complete example of a basic HTML5 page with common elements:</p>
-                
+
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -2087,7 +2131,7 @@ sessionStorage.clear();</code></pre>
             <section id="form-example" class="section">
                 <h1>Form Example</h1>
                 <p>Here's a complete example of an HTML form with various input types and validation:</p>
-                
+
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -2234,7 +2278,7 @@ sessionStorage.clear();</code></pre>
             <section id="layout-example" class="section">
                 <h1>Layout Example</h1>
                 <p>Here's an example of a responsive website layout using semantic HTML and CSS:</p>
-                
+
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -2389,7 +2433,7 @@ sessionStorage.clear();</code></pre>
             <section id="exercises" class="section">
                 <h1>Practice Exercises</h1>
                 <p>Test your HTML knowledge with these exercises. Try to solve them before looking at the solutions.</p>
-                
+
                 <div class="exercise">
                     <h3 class="exercise-title">Exercise 1: Basic Page Structure</h3>
                     <p>Create a basic HTML5 page with the following elements:</p>
@@ -2426,7 +2470,7 @@ sessionStorage.clear();</code></pre>
 &lt;/html&gt;</code></pre>
                     </div>
                 </div>
-                
+
                 <div class="exercise">
                     <h3 class="exercise-title">Exercise 2: Form Creation</h3>
                     <p>Create a registration form with the following fields:</p>
@@ -2485,7 +2529,7 @@ sessionStorage.clear();</code></pre>
 &lt;/form&gt;</code></pre>
                     </div>
                 </div>
-                
+
                 <div class="exercise">
                     <h3 class="exercise-title">Exercise 3: Semantic Layout</h3>
                     <p>Create a semantic HTML5 page layout with:</p>
@@ -2544,17 +2588,18 @@ sessionStorage.clear();</code></pre>
                     </div>
                 </div>
             </section>
-<!-- Tables Section -->
-<section id="tables" class="section">
-    <h1>HTML Tables</h1>
-    <p>HTML tables allow you to arrange data into rows and columns.</p>
-    
-    <div class="note">
-        <strong>Note:</strong> While tables are great for tabular data, they should not be used for page layout. Use CSS for layout instead.
-    </div>
-    
-    <h2>Basic Table Structure</h2>
-    <pre><code>&lt;table&gt;
+            <!-- Tables Section -->
+            <section id="tables" class="section">
+                <h1>HTML Tables</h1>
+                <p>HTML tables allow you to arrange data into rows and columns.</p>
+
+                <div class="note">
+                    <strong>Note:</strong> While tables are great for tabular data, they should not be used for page
+                    layout. Use CSS for layout instead.
+                </div>
+
+                <h2>Basic Table Structure</h2>
+                <pre><code>&lt;table&gt;
     &lt;tr&gt;
         &lt;th&gt;Header 1&lt;/th&gt;
         &lt;th&gt;Header 2&lt;/th&gt;
@@ -2568,77 +2613,81 @@ sessionStorage.clear();</code></pre>
         &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-    
-    <div class="example">
-        <div class="example-title">Basic Table Example</div>
-        <div class="example-result">
-            <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
-                <tr>
-                    <th style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Header 1</th>
-                    <th style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Header 2</th>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Row 1, Cell 1</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Row 1, Cell 2</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Row 2, Cell 1</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Row 2, Cell 2</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-    <h2>Table Elements</h2>
-    <table class="element-reference">
-        <tr>
-            <th>Element</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><code>&lt;table&gt;</code></td>
-            <td>Defines a table</td>
-        </tr>
-        <tr>
-            <td><code>&lt;tr&gt;</code></td>
-            <td>Defines a table row</td>
-        </tr>
-        <tr>
-            <td><code>&lt;th&gt;</code></td>
-            <td>Defines a table header cell</td>
-        </tr>
-        <tr>
-            <td><code>&lt;td&gt;</code></td>
-            <td>Defines a table data cell</td>
-        </tr>
-        <tr>
-            <td><code>&lt;caption&gt;</code></td>
-            <td>Defines a table caption</td>
-        </tr>
-        <tr>
-            <td><code>&lt;thead&gt;</code></td>
-            <td>Groups header content</td>
-        </tr>
-        <tr>
-            <td><code>&lt;tbody&gt;</code></td>
-            <td>Groups body content</td>
-        </tr>
-        <tr>
-            <td><code>&lt;tfoot&gt;</code></td>
-            <td>Groups footer content</td>
-        </tr>
-        <tr>
-            <td><code>&lt;colgroup&gt;</code></td>
-            <td>Specifies column groups</td>
-        </tr>
-        <tr>
-            <td><code>&lt;col&gt;</code></td>
-            <td>Specifies column properties</td>
-        </tr>
-    </table>
-    
-    <h2>Advanced Table Example</h2>
-    <pre><code>&lt;table&gt;
+
+                <div class="example">
+                    <div class="example-title">Basic Table Example</div>
+                    <div class="example-result">
+                        <table style="width:100%; border-collapse: collapse; margin: 15px 0;">
+                            <tr>
+                                <th
+                                    style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                    Header 1</th>
+                                <th
+                                    style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                    Header 2</th>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #ddd; padding:8px;">Row 1, Cell 1</td>
+                                <td style="border:1px solid #ddd; padding:8px;">Row 1, Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #ddd; padding:8px;">Row 2, Cell 1</td>
+                                <td style="border:1px solid #ddd; padding:8px;">Row 2, Cell 2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <h2>Table Elements</h2>
+                <table class="element-reference">
+                    <tr>
+                        <th>Element</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Defines a table</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Defines a table row</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;th&gt;</code></td>
+                        <td>Defines a table header cell</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Defines a table data cell</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;caption&gt;</code></td>
+                        <td>Defines a table caption</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;thead&gt;</code></td>
+                        <td>Groups header content</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tbody&gt;</code></td>
+                        <td>Groups body content</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tfoot&gt;</code></td>
+                        <td>Groups footer content</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;colgroup&gt;</code></td>
+                        <td>Specifies column groups</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;col&gt;</code></td>
+                        <td>Specifies column properties</td>
+                    </tr>
+                </table>
+
+                <h2>Advanced Table Example</h2>
+                <pre><code>&lt;table&gt;
     &lt;caption&gt;Monthly Savings&lt;/caption&gt;
     &lt;colgroup&gt;
         &lt;col span="2" style="background-color:#f1f1f1"&gt;
@@ -2666,68 +2715,73 @@ sessionStorage.clear();</code></pre>
         &lt;/tr&gt;
     &lt;/tfoot&gt;
 &lt;/table&gt;</code></pre>
-    
-    <div class="example">
-        <div class="example-title">Advanced Table Result</div>
-        <div class="example-result">
-            <table style="width:100%; border-collapse:collapse; margin:15px 0;">
-                <caption style="caption-side:bottom; margin-top:10px; font-style:italic;">Monthly Savings</caption>
-                <colgroup>
-                    <col span="2" style="background-color:#f1f1f1">
-                </colgroup>
-                <thead>
+
+                <div class="example">
+                    <div class="example-title">Advanced Table Result</div>
+                    <div class="example-result">
+                        <table style="width:100%; border-collapse:collapse; margin:15px 0;">
+                            <caption style="caption-side:bottom; margin-top:10px; font-style:italic;">Monthly Savings
+                            </caption>
+                            <colgroup>
+                                <col span="2" style="background-color:#f1f1f1">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th
+                                        style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                        Month</th>
+                                    <th
+                                        style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                        Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border:1px solid #ddd; padding:8px;">January</td>
+                                    <td style="border:1px solid #ddd; padding:8px;">$100</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid #ddd; padding:8px;">February</td>
+                                    <td style="border:1px solid #ddd; padding:8px;">$80</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Total</td>
+                                    <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">$180</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <h2>Table Attributes</h2>
+                <table class="attribute-reference">
                     <tr>
-                        <th style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Month</th>
-                        <th style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Savings</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="border:1px solid #ddd; padding:8px;">January</td>
-                        <td style="border:1px solid #ddd; padding:8px;">$100</td>
+                        <th>Attribute</th>
+                        <th>Description</th>
                     </tr>
                     <tr>
-                        <td style="border:1px solid #ddd; padding:8px;">February</td>
-                        <td style="border:1px solid #ddd; padding:8px;">$80</td>
+                        <td><code>colspan</code></td>
+                        <td>Number of columns a cell should span</td>
                     </tr>
-                </tbody>
-                <tfoot>
                     <tr>
-                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">Total</td>
-                        <td style="border:1px solid #ddd; padding:8px; font-weight:bold;">$180</td>
+                        <td><code>rowspan</code></td>
+                        <td>Number of rows a cell should span</td>
                     </tr>
-                </tfoot>
-            </table>
-        </div>
-    </div>
-    
-    <h2>Table Attributes</h2>
-    <table class="attribute-reference">
-        <tr>
-            <th>Attribute</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><code>colspan</code></td>
-            <td>Number of columns a cell should span</td>
-        </tr>
-        <tr>
-            <td><code>rowspan</code></td>
-            <td>Number of rows a cell should span</td>
-        </tr>
-        <tr>
-            <td><code>scope</code></td>
-            <td>Specifies if header cell applies to row, column, or group</td>
-        </tr>
-        <tr>
-            <td><code>headers</code></td>
-            <td>Associates data cells with header cells</td>
-        </tr>
-    </table>
-    
-    <div class="example">
-        <div class="example-title">Spanning Example</div>
-        <pre><code>&lt;table&gt;
+                    <tr>
+                        <td><code>scope</code></td>
+                        <td>Specifies if header cell applies to row, column, or group</td>
+                    </tr>
+                    <tr>
+                        <td><code>headers</code></td>
+                        <td>Associates data cells with header cells</td>
+                    </tr>
+                </table>
+
+                <div class="example">
+                    <div class="example-title">Spanning Example</div>
+                    <pre><code>&lt;table&gt;
     &lt;tr&gt;
         &lt;th colspan="2"&gt;Name&lt;/th&gt;
         &lt;th&gt;Age&lt;/th&gt;
@@ -2742,37 +2796,41 @@ sessionStorage.clear();</code></pre>
         &lt;td&gt;25&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-        <div class="example-result">
-            <table style="width:100%; border-collapse:collapse; margin:15px 0;">
-                <tr>
-                    <th colspan="2" style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Name</th>
-                    <th style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">Age</th>
-                </tr>
-                <tr>
-                    <td rowspan="2" style="border:1px solid #ddd; padding:8px;">John</td>
-                    <td style="border:1px solid #ddd; padding:8px;">Doe</td>
-                    <td style="border:1px solid #ddd; padding:8px;">30</td>
-                </tr>
-                <tr>
-                    <td style="border:1px solid #ddd; padding:8px;">Smith</td>
-                    <td style="border:1px solid #ddd; padding:8px;">25</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-    <div class="exercise">
-        <h3 class="exercise-title">Table Exercise</h3>
-        <p>Create a table with the following requirements:</p>
-        <ul>
-            <li>3 columns: Product, Price, Quantity</li>
-            <li>4 rows of data</li>
-            <li>Use colspan in the footer to show total price</li>
-            <li>Add a caption</li>
-        </ul>
-        <button class="exercise-btn" data-solution="table-exercise">Show Solution</button>
-        <div class="exercise-solution" id="table-exercise">
-            <pre><code>&lt;table&gt;
+                    <div class="example-result">
+                        <table style="width:100%; border-collapse:collapse; margin:15px 0;">
+                            <tr>
+                                <th colspan="2"
+                                    style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                    Name</th>
+                                <th
+                                    style="border:1px solid #ddd; padding:8px; text-align:left; background-color:#f2f2f2;">
+                                    Age</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" style="border:1px solid #ddd; padding:8px;">John</td>
+                                <td style="border:1px solid #ddd; padding:8px;">Doe</td>
+                                <td style="border:1px solid #ddd; padding:8px;">30</td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #ddd; padding:8px;">Smith</td>
+                                <td style="border:1px solid #ddd; padding:8px;">25</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="exercise">
+                    <h3 class="exercise-title">Table Exercise</h3>
+                    <p>Create a table with the following requirements:</p>
+                    <ul>
+                        <li>3 columns: Product, Price, Quantity</li>
+                        <li>4 rows of data</li>
+                        <li>Use colspan in the footer to show total price</li>
+                        <li>Add a caption</li>
+                    </ul>
+                    <button class="exercise-btn" data-solution="table-exercise">Show Solution</button>
+                    <div class="exercise-solution" id="table-exercise">
+                        <pre><code>&lt;table&gt;
     &lt;caption&gt;Product Inventory&lt;/caption&gt;
     &lt;tr&gt;
         &lt;th&gt;Product&lt;/th&gt;
@@ -2801,53 +2859,68 @@ sessionStorage.clear();</code></pre>
         &lt;/tr&gt;
     &lt;/tfoot&gt;
 &lt;/table&gt;</code></pre>
-        </div>
-    </div>
-</section>
+                    </div>
+                </div>
+            </section>
             <!-- Resources Section -->
             <section id="resources" class="section">
                 <h1>HTML Resources</h1>
                 <p>Here are some valuable resources to continue learning HTML and web development:</p>
-                
+
                 <h2>Official Documentation</h2>
                 <ul>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Documentation</a> - Comprehensive HTML reference</li>
-                    <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Living Standard</a> - The official HTML specification</li>
-                    <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML Tutorial</a> - Beginner-friendly tutorials</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                            rel="noopener noreferrer">MDN HTML Documentation</a> - Comprehensive HTML reference</li>
+                    <li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Living
+                            Standard</a> - The official HTML specification</li>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools
+                            HTML Tutorial</a> - Beginner-friendly tutorials</li>
                 </ul>
-                
+
                 <h2>Online Courses</h2>
                 <ul>
-                    <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank" rel="noopener noreferrer">Codecademy HTML Course</a> - Interactive learning</li>
-                    <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" rel="noopener noreferrer">freeCodeCamp Responsive Web Design</a> - Includes HTML/CSS</li>
-                    <li><a href="https://www.udemy.com/course/html5-fundamentals-for-beginners/" target="_blank" rel="noopener noreferrer">Udemy HTML5 Course</a> - Video-based learning</li>
+                    <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank"
+                            rel="noopener noreferrer">Codecademy HTML Course</a> - Interactive learning</li>
+                    <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank"
+                            rel="noopener noreferrer">freeCodeCamp Responsive Web Design</a> - Includes HTML/CSS</li>
+                    <li><a href="https://www.udemy.com/course/html5-fundamentals-for-beginners/" target="_blank"
+                            rel="noopener noreferrer">Udemy HTML5 Course</a> - Video-based learning</li>
+                    <li><a href="https://effortless-dolphin-2fea1a.netlify.app/" target="_blank"
+                            rel="noopener noreferrer">OOP/DSA</a> - Real-world Python/Java/JavaScript</li>
+
                 </ul>
-                
+
                 <h2>Validation Tools</h2>
                 <ul>
-                    <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a> - Check your HTML for errors</li>
-                    <li><a href="https://html5.validator.nu/" target="_blank" rel="noopener noreferrer">HTML5 Validator</a> - Alternative validator</li>
+                    <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a>
+                        - Check your HTML for errors</li>
+                    <li><a href="https://html5.validator.nu/" target="_blank" rel="noopener noreferrer">HTML5
+                            Validator</a> - Alternative validator</li>
                 </ul>
-                
+
                 <h2>Cheat Sheets</h2>
                 <ul>
-                    <li><a href="https://htmlcheatsheet.com/" target="_blank" rel="noopener noreferrer">HTML Cheat Sheet</a> - Quick reference guide</li>
-                    <li><a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank" rel="noopener noreferrer">HTML5 Cheat Sheet (PDF)</a> - Printable reference</li>
+                    <li><a href="https://htmlcheatsheet.com/" target="_blank" rel="noopener noreferrer">HTML Cheat
+                            Sheet</a> - Quick reference guide</li>
+                    <li><a href="https://websitesetup.org/html5-cheat-sheet/" target="_blank"
+                            rel="noopener noreferrer">HTML5 Cheat Sheet (PDF)</a> - Printable reference</li>
                 </ul>
-                
+
                 <h2>Practice Platforms</h2>
                 <ul>
-                    <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a> - Online code editor for experimentation</li>
-                    <li><a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer">JSFiddle</a> - Another online editor</li>
-                    <li><a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend Mentor</a> - Real-world HTML/CSS challenges</li>
-                    <li><a href="https://effortless-dolphin-2fea1a.netlify.app/" target="_blank" rel="noopener noreferrer">OOP/DSA</a> - Real-world Python/Java/JavaScript</li>
-                    
+                    <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a> - Online
+                        code editor for experimentation</li>
+                    <li><a href="https://jsfiddle.net/" target="_blank" rel="noopener noreferrer">JSFiddle</a> - Another
+                        online editor</li>
+                    <li><a href="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer">Frontend
+                            Mentor</a> - Real-world HTML/CSS challenges</li>
                 </ul>
-                
+
                 <div class="note">
-                    <strong>Tip:</strong> The best way to learn HTML is by practicing. Build small projects and gradually increase their complexity.
+                    <strong>Tip:</strong> The best way to learn HTML is by practicing. Build small projects and
+                    gradually increase their complexity.
                 </div>
-            </section>  
+            </section>
         </main>
     </div>
     <footer>
@@ -2856,10 +2929,10 @@ sessionStorage.clear();</code></pre>
 
     <script>
         // JavaScript for theme toggle, sidebar navigation, tabs, etc.
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Theme toggle functionality
             const themeToggle = document.getElementById('themeToggle');
-            themeToggle.addEventListener('click', function() {
+            themeToggle.addEventListener('click', function () {
                 document.body.dataset.theme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
                 localStorage.setItem('theme', document.body.dataset.theme);
             });
@@ -2873,13 +2946,13 @@ sessionStorage.clear();</code></pre>
             const navLinks = document.querySelectorAll('.sidebar-menu a');
 
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
+
                     // Update active nav link
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
-                    
+
                     // Show corresponding section
                     const sectionId = this.getAttribute('data-section');
                     sections.forEach(section => {
@@ -2903,16 +2976,16 @@ sessionStorage.clear();</code></pre>
             // Tab functionality
             const tabButtons = document.querySelectorAll('.tab-btn');
             tabButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const tabContainer = this.closest('.tab-container');
                     const tabName = this.getAttribute('data-tab');
-                    
+
                     // Update active tab button
                     tabContainer.querySelectorAll('.tab-btn').forEach(btn => {
                         btn.classList.remove('active');
                     });
                     this.classList.add('active');
-                    
+
                     // Show corresponding tab content
                     tabContainer.querySelectorAll('.tab-content').forEach(content => {
                         content.classList.remove('active');
@@ -2926,7 +2999,7 @@ sessionStorage.clear();</code></pre>
             // Exercise solutions toggle
             const exerciseButtons = document.querySelectorAll('.exercise-btn');
             exerciseButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const solutionId = this.getAttribute('data-solution');
                     const solution = document.getElementById(solutionId);
                     solution.classList.toggle('show');
@@ -2935,5 +3008,5 @@ sessionStorage.clear();</code></pre>
         });
     </script>
 </body>
+
 </html>
-   
